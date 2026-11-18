@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #18264d, #050711 75%);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+h1 span {
+    color: #00e5ff;
+}
+
+.subtitulo,
+.instrucoes {
+    color: #aebbd8;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.painel {
+    display: flex;
+    justify-content: space-around;
+    padding: 14px;
+    margin-top: 18px;
+    background: #121b32;
+    border: 1px solid #293b66;
+    border-radius: 10px 10px 0 0;
+    color: #aebbd8;
+    font-size: 12px;
+}
+
+.painel strong {
+    display: block;
+    margin-top: 5px;
+    color: #00e5ff;
+    font-size: 24px;
+}
+
+.area-jogo {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #314d7e;
+    background: #070b1c;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tela {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    padding: 20px;
+    background: rgba(3, 7, 22, 0.91);
+}
+
+.tela h2 {
+    color: #00e5ff;
+    font-size: 28px;
+}
+
+.tela p {
+    color: #d0d9ed;
+    line-height: 1.6;
+}
+
+button {
+    border: 1px solid #00d9ff;
+    border-radius: 8px;
+    padding: 13px 18px;
+    background: #087cf0;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    touch-action: none;
+    user-select: none;
+}
+
+button:hover {
+    background: #00a9e8;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.controles button {
+    min-width: 65px;
+    min-height: 48px;
+}
+
+#atirar {
+    flex: 1;
+    max-width: 150px;
+    background: #c52b57;
+    border-color: #ff6388;
+}
+
+#atirar:hover {
+    background: #eb3869;
+}
+
+.instrucoes {
+    font-size: 12px;
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 23px;
+    }
+
+    .tela h2 {
+        font-size: 23px;
+    }
+
+    .controles {
+        gap: 8px;
+    }
+}
